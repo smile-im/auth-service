@@ -25,7 +25,7 @@ func main() {
 	// 判断是否是-v参数如果是，则输出版本信息
 	if len(os.Args) > 1 {
 		if os.Args[1] == "-v" || os.Args[1] == "version" {
-			fmt.Printf("version: %s\ngithash: %s\ndate: %s\ngo: %s", VERSION, GIT_HASH, COMPILE_DATE, GO_VERSION)
+			fmt.Printf("Version: %s\nGit Hash: %s\nBuild Date: %s\nGO Version: %s\n", VERSION, GIT_HASH, COMPILE_DATE, GO_VERSION)
 			return
 		}
 	}
